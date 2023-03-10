@@ -10,14 +10,6 @@ JEECG BOOT 低代码开发平台
 当前最新版本： 3.4.4（发布日期：2022-11-21） 
 
 
-[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/zhangdaiscott/jeecg-boot/blob/master/LICENSE)
-[![](https://img.shields.io/badge/Author-北京敲敲云科技-orange.svg)](http://www.jeecg.com)
-[![](https://img.shields.io/badge/Blog-官方博客-blue.svg)](https://jeecg.blog.csdn.net)
-[![](https://img.shields.io/badge/version-3.4.4-brightgreen.svg)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/jeecg-boot.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/jeecg-boot)
-[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/jeecg-boot.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/jeecg-boot)
-
-
 
 项目介绍
 -----------------------------------
@@ -34,51 +26,7 @@ JeecgBoot 提供了一系列`低代码模块`，实现在线开发`真正的零�
 `JEECG业务流程:` 采用工作流来实现、扩展出任务接口，供开发编写业务逻辑，表单提供多种解决方案： 表单设计器、online配置表单、编码表单。同时实现了流程与表单的分离设计（松耦合）、并支持任务节点灵活配置，既保证了公司流程的保密性，又减少了开发人员的工作量。
 
 
-源码下载
------------------------------------
 
-| 源码                | 源码地址                     | 
-|--------------------|------------------------|
-| 后台源码    | https://github.com/jeecgboot/jeecg-boot        |
-| 前端源码 `Vue3版` | https://github.com/jeecgboot/jeecgboot-vue3 |
-| 前端源码 `Vue2版`  |https://github.com/jeecgboot/ant-design-vue-jeecg    |
-| APP配套框架 | https://github.com/jeecgboot/jeecg-uniapp |
-
-#####  快速搭建开发环境
-
-- [通过IDEA启动前后端项目](http://doc.jeecg.com/2043874)
-- [Vue3前端项目快速启动](http://vue3.jeecg.com/2398848)
-- [Vue2前端项目快速启动](http://doc.jeecg.com/2678320)
-- [单体快速切换为微服务版](http://doc.jeecg.com/3043471)
-
-##### 项目说明
-
-| 项目名                | 说明                     | 
-|--------------------|------------------------|
-| `jeecg-boot`    | SpringBoot后台源码（支持微服务）        |
-| `jeecgboot-vue3` | Vue3+TS 新版前端源码 |
-| `ant-design-vue-jeecg`  |Vue2版 前端源码     |
-| `jeecg-uniapp` | APP开发框架，一份代码多终端适配，同时支持APP、小程序、H5 |
-| `jeecg-boot-starter` | [Stater依赖项目单独维护，点击下载](https://gitee.com/jeecg/jeecg-boot-starter) |
-| `更多开源插件` | [更多源码下载](https://github.com/jeecgboot) |
-
-
-
-技术文档
------------------------------------
-
-- 项目官网：  [http://www.jeecg.com](http://www.jeecg.com)
-
-- 在线演示 ：  [Vue3版本](http://boot3.jeecg.com) | [Vue2版本](http://boot.jeecg.com)  |  [敲敲云(零代码)](http://app.qiaoqiaoyun.com)
-
-- 开发文档：  [Vue3文档](http://vue3.jeecg.com) | [主项目文档](http://doc.jeecg.com) 
-
-- 新手指南： [快速入门](http://www.jeecg.com/doc/quickstart)  |   [常见问题 ](http://www.jeecg.com/doc/qa) |  [视频教程](https://space.bilibili.com/454617261/channel/series)  |  [1分钟体验低代码](https://my.oschina.net/jeecg/blog/3083313) 
-
-- 敲敲云平台(零代码)：  [http://qiaoqiaoyun.com](http://qiaoqiaoyun.com)
-
-- QQ交流群 ： ⑥730954414、VUE3群683903138、⑤860162132(满)、④774126647(满)、③816531124(满)、②769925425(满)、①284271917(满)
-> ` 提醒：【QQ群是自助服务群，建议给帮助您解决问题的同学发送指定红包，表示感谢！】 `
 
 
 
@@ -95,20 +43,6 @@ Docker启动项目
 适用项目
 -----------------------------------
 Jeecg-Boot低代码开发平台，可以应用在任何J2EE项目的开发中，尤其适合SAAS项目、企业信息管理系统（MIS）、内部办公系统（OA）、企业资源计划系统（ERP）、客户关系管理系统（CRM）等，其半智能手工Merge的开发方式，可以显著提高开发效率70%以上，极大降低开发成本。
-
-
-技术支持
------------------------------------
-
-关闭gitee的issue通道，使用中遇到问题或者BUG可以在 [Github上提Issues](https://github.com/jeecgboot/jeecg-boot/issues/new)
-
-官方支持： [http://jeecg.com/doc/help](http://jeecg.com/doc/help)
-
-
-##### Star走势图
-
-[![Star History Chart](https://api.star-history.com/svg?repos=jeecgboot/jeecg-boot&type=Date)](https://star-history.com/#jeecgboot/jeecg-boot)
-
 
 
 
@@ -233,62 +167,6 @@ Jeecg-Boot低代码开发平台，可以应用在任何J2EE项目的开发中，
 
 - Vue2版本：`Vue2.6+@vue/cli+AntDesignVue+Viser-vue+Vuex等`  [详细查看](https://github.com/jeecgboot/ant-design-vue-jeecg)
 - Vue3版本：`Vue3.0+TypeScript+Vite+AntDesignVue+pinia+echarts等新方案` [详细查看](https://github.com/jeecgboot/jeecgboot-vue3)
-
-#### 支持库
-
-|  数据库   |  支持   |
-| --- | --- |
-|   MySQL   |  √   |
-|  Oracle11g   |  √   |
-|  Sqlserver2017   |  √   |
-|   PostgreSQL   |  √   |
-|   MariaDB   |  √   |
-|   达梦、人大金仓   |  √   |
-
-
-
-## 微服务解决方案
-
-
-1、服务注册和发现 Nacos √
-
-2、统一配置中心 Nacos  √
-
-3、路由网关 gateway(三种加载方式) √
-
-4、分布式 http feign √
-
-5、熔断降级限流 Sentinel √
-
-6、分布式文件 Minio、阿里OSS √ 
-
-7、统一权限控制 JWT + Shiro √
-
-8、服务监控 SpringBootAdmin√
-
-9、链路跟踪 Skywalking   [参考文档](http://doc.jeecg.com/2350293)
-
-10、消息中间件 RabbitMQ  √
-
-11、分布式任务 xxl-job  √ 
-
-12、分布式事务 Seata
-
-13、分布式日志 elk + kafka
-
-14、支持 docker-compose、k8s、jenkins
-
-15、CAS 单点登录   √
-
-16、路由限流   √
-
-   
-#### 微服务架构图
-![微服务架构图](https://jeecgos.oss-cn-beijing.aliyuncs.com/files/jeecgboot_springcloud2022.png "在这里输入图片标题")
-
-### Jeecg Boot 产品功能蓝图
-![功能蓝图](https://jeecgos.oss-cn-beijing.aliyuncs.com/upload/test/Jeecg-Boot-lantu202005_1590912449914.jpg "在这里输入图片标题")
-
 
 
 
@@ -435,58 +313,3 @@ Jeecg-Boot低代码开发平台，可以应用在任何J2EE项目的开发中，
    └─更多功能开发中。。
    
 ```
-
-
-
-
-
-系统效果
-----
-##### 大屏模板
-![输入图片说明](https://static.oschina.net/uploads/img/201912/25133248_Ag1C.jpg "在这里输入图片标题")
-
-![输入图片说明](https://static.oschina.net/uploads/img/201912/25133301_k9Kc.jpg "在这里输入图片标题")
-
-##### PC端
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14155402_AmlV.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160657_cHwb.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160813_KmXS.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160935_Nibs.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14161004_bxQ4.png "在这里输入图片标题")
-
-
-##### 在线接口文档
-![输入图片说明](https://static.oschina.net/uploads/img/201908/27095258_M2Xq.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160957_hN3X.png "在这里输入图片标题")
-
-
-##### 报表
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160828_pkFr.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160834_Lo23.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160842_QK7B.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160849_GBm5.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160858_6RAM.png "在这里输入图片标题")
-
-##### 流程
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160623_8fwk.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160917_9Ftz.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201904/14160633_u59G.png "在这里输入图片标题")
-![输入图片说明](https://static.oschina.net/uploads/img/201907/05165142_yyQ7.png "在这里输入图片标题")
-
-
-##### 手机端
-![](https://oscimg.oschina.net/oscnet/da543c5d0d57baab0cecaa4670c8b68c521.jpg)
-![](https://oscimg.oschina.net/oscnet/fda4bd82cab9d682de1c1fbf2060bf14fa6.jpg)
-
-##### PAD端
-![](https://oscimg.oschina.net/oscnet/e90fef970a8c33790ab03ffd6c4c7cec225.jpg)
-![](https://oscimg.oschina.net/oscnet/d78218803a9e856a0aa82b45efc49849a0c.jpg)
-![](https://oscimg.oschina.net/oscnet/0404054d9a12647ef6f82cf9cfb80a5ac02.jpg)
-![](https://oscimg.oschina.net/oscnet/59c23b230f52384e588ee16309b44fa20de.jpg)
-
-
-## 捐赠 
-
-如果觉得还不错，请作者喝杯咖啡吧 ☺
-
-![](https://static.oschina.net/uploads/img/201903/08155608_0EFX.png)
