@@ -1,4 +1,4 @@
-package org.jeecg.modules.demo.org.peng.anunaki.entity;
+package org.peng.anunaki.entity;
 
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;

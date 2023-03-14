@@ -1,10 +1,11 @@
-package org.jeecg.modules.demo.org.peng.anunaki.mapper;
+package org.peng.anunaki.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
-import org.jeecg.modules.demo.org.peng.anunaki.entity.AnunakiWiki;
+import org.peng.anunaki.entity.AnunakiWiki;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.peng.anunaki.entity.AnunakiWiki;
 
 /**
  * @Description: 百科知识
