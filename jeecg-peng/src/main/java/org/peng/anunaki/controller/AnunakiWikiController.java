@@ -10,7 +10,7 @@ import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.aspect.annotation.AutoLog;
 import org.jeecg.common.system.base.controller.JeecgController;
 import org.jeecg.common.system.query.QueryGenerator;
-import org.jeecg.modules.demo.org.peng.anunaki.entity.AnunakiWiki;
+import org.peng.anunaki.entity.AnunakiWiki;
 import org.peng.anunaki.service.IAnunakiWikiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
