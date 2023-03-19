@@ -1,32 +1,33 @@
-package org.peng.anunaki.controller;
+package org.jeecg.modules.anunaki.controller;
+
+import java.util.Arrays;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.jeecg.common.api.vo.Result;
+import org.jeecg.common.system.query.QueryGenerator;
+import org.jeecg.modules.anunaki.service.IAnunakiWikiService;
+import org.jeecg.modules.anunaki.entity.AnunakiWiki;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.jeecg.common.api.vo.Result;
-import org.jeecg.common.aspect.annotation.AutoLog;
+
 import org.jeecg.common.system.base.controller.JeecgController;
-import org.jeecg.common.system.query.QueryGenerator;
-import org.peng.anunaki.entity.AnunakiWiki;
-import org.peng.anunaki.service.IAnunakiWikiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.jeecg.common.aspect.annotation.AutoLog;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.Arrays;
-
- /**
+/**
  * @Description: 百科知识
- * @Author: pengweitao
+ * @Author: jeecg-boot
  * @Date:   2023-03-10
  * @Version: V1.0
  */
-@Api(tags="wiki")
+@Api(tags="百科知识")
 @RestController
 @RequestMapping("/anunakiWiki")
 @Slf4j
@@ -47,9 +48,9 @@ public class AnunakiWikiController extends JeecgController<AnunakiWiki, IAnunaki
 	@ApiOperation(value="百科知识-分页列表查询", notes="百科知识-分页列表查询")
 	@GetMapping(value = "/list")
 	public Result<IPage<AnunakiWiki>> queryPageList(AnunakiWiki anunakiWiki,
-													@RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
-													@RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
-													HttpServletRequest req) {
+								   @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
+								   @RequestParam(name="pageSize", defaultValue="10") Integer pageSize,
+								   HttpServletRequest req) {
 		QueryWrapper<AnunakiWiki> queryWrapper = QueryGenerator.initQueryWrapper(anunakiWiki, req.getParameterMap());
 		Page<AnunakiWiki> page = new Page<AnunakiWiki>(pageNo, pageSize);
 		IPage<AnunakiWiki> pageList = anunakiWikiService.page(page, queryWrapper);
