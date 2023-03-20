@@ -1,4 +1,4 @@
-package org.peng.anunaki.test.entity;
+package org.peng.modules.anunaki.test.entity;
 
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;

@@ -24,6 +24,12 @@
             <artifactId>jeecg-module-demo</artifactId>
             <version>${jeecgboot.version}</version>
         </dependency>
+        <!-- PENG 模块 -->
+        <dependency>
+            <groupId>org.jeecgframework.boot</groupId>
+            <artifactId>jeecg-peng</artifactId>
+            <version>${jeecgboot.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

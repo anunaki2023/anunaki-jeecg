@@ -1,8 +1,8 @@
-package org.peng.anunaki.test.service.impl;
+package org.peng.modules.anunaki.test.service.impl;
 
-import org.peng.anunaki.test.entity.TestDemo;
-import org.peng.anunaki.test.mapper.TestDemoMapper;
-import org.peng.anunaki.test.service.ITestDemoService;
+import org.peng.modules.anunaki.test.entity.TestDemo;
+import org.peng.modules.anunaki.test.mapper.TestDemoMapper;
+import org.peng.modules.anunaki.test.service.ITestDemoService;
 import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

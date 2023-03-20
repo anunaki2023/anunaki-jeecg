@@ -1,6 +1,6 @@
-package org.jeecg.modules.anunaki.mapper;
+package org.peng.modules.anunaki.mapper;
 
-import org.jeecg.modules.anunaki.entity.AnunakiWiki;
+import org.peng.modules.anunaki.entity.AnunakiWiki;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

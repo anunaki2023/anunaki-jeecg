@@ -1,6 +1,6 @@
-package org.peng.anunaki.test.service;
+package org.peng.modules.anunaki.test.service;
 
-import org.peng.anunaki.test.entity.TestDemo;
+import org.peng.modules.anunaki.test.entity.TestDemo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

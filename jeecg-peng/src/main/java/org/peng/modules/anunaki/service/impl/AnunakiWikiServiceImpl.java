@@ -1,8 +1,8 @@
-package org.jeecg.modules.anunaki.service.impl;
+package org.peng.modules.anunaki.service.impl;
 
-import org.jeecg.modules.anunaki.mapper.AnunakiWikiMapper;
-import org.jeecg.modules.anunaki.service.IAnunakiWikiService;
-import org.jeecg.modules.anunaki.entity.AnunakiWiki;
+import org.peng.modules.anunaki.mapper.AnunakiWikiMapper;
+import org.peng.modules.anunaki.service.IAnunakiWikiService;
+import org.peng.modules.anunaki.entity.AnunakiWiki;
 import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

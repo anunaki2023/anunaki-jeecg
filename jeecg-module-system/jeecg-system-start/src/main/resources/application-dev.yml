@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT:8090}
   tomcat:
     max-swallow-size: -1
   error:
@@ -26,8 +26,8 @@ spring:
       max-request-size: 10MB
   mail:
     host: smtp.163.com
-    username: peng
-    password: peng
+    username: ??
+    password: ??
     properties:
       mail:
         smtp:
@@ -127,13 +127,12 @@ spring:
         # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
         filters: stat,wall,slf4j
         # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
-
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://1.15.105.22:3306/jeecg_peng?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
-          username: peng
-          password: RArGJyCw2j2bii82
+          url: jdbc:mysql://${MYSQL_HOST}?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          username: ${MYSQL_USERNAME}
+          password: ${MYSQL_PASSWORD}
           driver-class-name: com.mysql.cj.jdbc.Driver
           # 多数据源配置
           #multi-datasource1:
@@ -144,9 +143,9 @@ spring:
   #redis 配置
   redis:
     database: 0
-    host: localhost
+    host: ${REDIS_HOST}
     port: 6379
-    password: ''
+    password: ${REDIS_PASSWORD}
 #mybatis plus 设置
 mybatis-plus:
   mapper-locations: classpath*:org/jeecg/modules/**/xml/*Mapper.xml
@@ -237,7 +236,7 @@ cas:
 #Mybatis输出sql日志
 logging:
   level:
-    org.jeecg.modules.system.mapper: info
+    org.jeecg.modules.system.mapper: debug
 #swagger
 knife4j:
   #开启增强配置

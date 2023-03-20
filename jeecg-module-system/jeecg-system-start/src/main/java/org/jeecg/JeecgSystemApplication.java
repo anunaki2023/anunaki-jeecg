@@ -7,22 +7,28 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
-* 单体启动类
-* 报错提醒: 未集成mongo报错，可以打开启动类上面的注释 exclude={MongoAutoConfiguration.class}
-*/
+ * 单体启动类
+ * 报错提醒: 未集成mongo报错，可以打开启动类上面的注释 exclude={MongoAutoConfiguration.class}
+ */
 @Slf4j
 @SpringBootApplication
+@ComponentScan(basePackages = {
+        "org.jeecg"
+        , "org.peng.modules"
+})
 //@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
 public class JeecgSystemApplication extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+
         return application.sources(JeecgSystemApplication.class);
     }
 

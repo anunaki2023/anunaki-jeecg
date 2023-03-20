@@ -1,6 +1,6 @@
-package org.jeecg.modules.anunaki.service;
+package org.peng.modules.anunaki.service;
 
-import org.jeecg.modules.anunaki.entity.AnunakiWiki;
+import org.peng.modules.anunaki.entity.AnunakiWiki;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

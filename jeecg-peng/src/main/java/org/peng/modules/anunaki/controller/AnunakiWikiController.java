@@ -1,12 +1,12 @@
-package org.jeecg.modules.anunaki.controller;
+package org.peng.modules.anunaki.controller;
 
 import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.system.query.QueryGenerator;
-import org.jeecg.modules.anunaki.service.IAnunakiWikiService;
-import org.jeecg.modules.anunaki.entity.AnunakiWiki;
+import org.peng.modules.anunaki.service.IAnunakiWikiService;
+import org.peng.modules.anunaki.entity.AnunakiWiki;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -34,7 +34,7 @@ import org.jeecg.common.aspect.annotation.AutoLog;
 public class AnunakiWikiController extends JeecgController<AnunakiWiki, IAnunakiWikiService> {
 	@Autowired
 	private IAnunakiWikiService anunakiWikiService;
-	
+
 	/**
 	 * 分页列表查询
 	 *
@@ -56,7 +56,7 @@ public class AnunakiWikiController extends JeecgController<AnunakiWiki, IAnunaki
 		IPage<AnunakiWiki> pageList = anunakiWikiService.page(page, queryWrapper);
 		return Result.OK(pageList);
 	}
-	
+
 	/**
 	 *   添加
 	 *
@@ -71,7 +71,7 @@ public class AnunakiWikiController extends JeecgController<AnunakiWiki, IAnunaki
 		anunakiWikiService.save(anunakiWiki);
 		return Result.OK("添加成功！");
 	}
-	
+
 	/**
 	 *  编辑
 	 *
@@ -86,7 +86,7 @@ public class AnunakiWikiController extends JeecgController<AnunakiWiki, IAnunaki
 		anunakiWikiService.updateById(anunakiWiki);
 		return Result.OK("编辑成功!");
 	}
-	
+
 	/**
 	 *   通过id删除
 	 *
@@ -101,7 +101,7 @@ public class AnunakiWikiController extends JeecgController<AnunakiWiki, IAnunaki
 		anunakiWikiService.removeById(id);
 		return Result.OK("删除成功!");
 	}
-	
+
 	/**
 	 *  批量删除
 	 *
@@ -116,7 +116,7 @@ public class AnunakiWikiController extends JeecgController<AnunakiWiki, IAnunaki
 		this.anunakiWikiService.removeByIds(Arrays.asList(ids.split(",")));
 		return Result.OK("批量删除成功!");
 	}
-	
+
 	/**
 	 * 通过id查询
 	 *

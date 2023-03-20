@@ -1,4 +1,4 @@
-package org.peng.anunaki.test.controller;
+package org.peng.modules.anunaki.test.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -10,8 +10,8 @@ import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.aspect.annotation.AutoLog;
 import org.jeecg.common.system.base.controller.JeecgController;
 import org.jeecg.common.system.query.QueryGenerator;
-import org.peng.anunaki.test.entity.TestDemo;
-import org.peng.anunaki.test.service.ITestDemoService;
+import org.peng.modules.anunaki.test.entity.TestDemo;
+import org.peng.modules.anunaki.test.service.ITestDemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -33,7 +33,7 @@ import java.util.Arrays;
 public class TestDemoController extends JeecgController<TestDemo, ITestDemoService> {
 	@Autowired
 	private ITestDemoService testDemoService;
-	
+
 	/**
 	 * 分页列表查询
 	 *
@@ -55,7 +55,7 @@ public class TestDemoController extends JeecgController<TestDemo, ITestDemoServi
 		IPage<TestDemo> pageList = testDemoService.page(page, queryWrapper);
 		return Result.OK(pageList);
 	}
-	
+
 	/**
 	 *   添加
 	 *
@@ -70,7 +70,7 @@ public class TestDemoController extends JeecgController<TestDemo, ITestDemoServi
 		testDemoService.save(testDemo);
 		return Result.OK("添加成功！");
 	}
-	
+
 	/**
 	 *  编辑
 	 *
@@ -85,7 +85,7 @@ public class TestDemoController extends JeecgController<TestDemo, ITestDemoServi
 		testDemoService.updateById(testDemo);
 		return Result.OK("编辑成功!");
 	}
-	
+
 	/**
 	 *   通过id删除
 	 *
@@ -100,7 +100,7 @@ public class TestDemoController extends JeecgController<TestDemo, ITestDemoServi
 		testDemoService.removeById(id);
 		return Result.OK("删除成功!");
 	}
-	
+
 	/**
 	 *  批量删除
 	 *
@@ -115,7 +115,7 @@ public class TestDemoController extends JeecgController<TestDemo, ITestDemoServi
 		this.testDemoService.removeByIds(Arrays.asList(ids.split(",")));
 		return Result.OK("批量删除成功!");
 	}
-	
+
 	/**
 	 * 通过id查询
 	 *
