@@ -131,10 +131,10 @@
             <artifactId>spring-web</artifactId>
             <version>5.3.24</version>
         </dependency>
-		<dependency>
-			<groupId>org.jeecgframework.boot</groupId>
-			<artifactId>jeecg-boot-base-core</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.jeecgframework.boot</groupId>-->
+<!--			<artifactId>jeecg-boot-base-core</artifactId>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<dependencyManagement>

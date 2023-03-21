@@ -21,7 +21,7 @@ import java.net.UnknownHostException;
 @SpringBootApplication
 @ComponentScan(basePackages = {
         "org.jeecg"
-        , "org.peng.modules"
+        , "org.peng"
 })
 //@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
 public class JeecgSystemApplication extends SpringBootServletInitializer {
