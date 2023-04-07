@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS `anunaki_memo` (
   `title` VARCHAR(45) NULL,
   `content` VARCHAR(500) NULL,
   `thedate` DATETIME NULL,
+  `alertDate` DATETIME null comment '提醒时间',
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4

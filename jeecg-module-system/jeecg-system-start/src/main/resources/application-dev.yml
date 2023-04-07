@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8090}
+  port: 8090
   tomcat:
     max-swallow-size: -1
   error:
@@ -26,8 +26,8 @@ spring:
       max-request-size: 10MB
   mail:
     host: smtp.163.com
-    username: ??
-    password: ??
+    username: peng
+    password: peng
     properties:
       mail:
         smtp:
@@ -127,6 +127,7 @@ spring:
         # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
         filters: stat,wall,slf4j
         # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
@@ -143,9 +144,9 @@ spring:
   #redis 配置
   redis:
     database: 0
-    host: ${REDIS_HOST}
+    host: 127.0.0.1
     port: 6379
-    password: ${REDIS_PASSWORD}
+    password: ''
 #mybatis plus 设置
 mybatis-plus:
   mapper-locations: classpath*:org/jeecg/modules/**/xml/*Mapper.xml
